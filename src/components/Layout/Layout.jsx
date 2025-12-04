@@ -1,0 +1,16 @@
+import { LayoutContainer, MainContent } from "./Layout.styled";
+import Header from "./Header";
+import { Outlet } from "react-router-dom";
+
+const Layout = () => {
+  return (
+    <LayoutContainer>
+      <Header />
+      <MainContent>
+        <Outlet />
+      </MainContent>
+    </LayoutContainer>
+  );
+};
+
+export default Layout;
